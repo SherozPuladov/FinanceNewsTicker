@@ -5,10 +5,14 @@
       "Newtonsoft.Json/13.0.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {}
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {}
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -56,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sheroz/Projects/FinanceNewsTicker/FinanceNewsTicker/FinanceNewsTicker.csproj",
+      "projectUniqueName": "/home/sheroz/Projects/GitHub/FinanceNewsTicker/FinanceNewsTicker/FinanceNewsTicker/FinanceNewsTicker.csproj",
       "projectName": "FinanceNewsTicker",
-      "projectPath": "/home/sheroz/Projects/FinanceNewsTicker/FinanceNewsTicker/FinanceNewsTicker.csproj",
+      "projectPath": "/home/sheroz/Projects/GitHub/FinanceNewsTicker/FinanceNewsTicker/FinanceNewsTicker/FinanceNewsTicker.csproj",
       "packagesPath": "/home/sheroz/.nuget/packages/",
-      "outputPath": "/home/sheroz/Projects/FinanceNewsTicker/FinanceNewsTicker/obj/",
+      "outputPath": "/home/sheroz/Projects/GitHub/FinanceNewsTicker/FinanceNewsTicker/FinanceNewsTicker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sheroz/.nuget/NuGet/NuGet.Config"
@@ -81,7 +85,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net6.0": {
@@ -98,10 +108,21 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -110,7 +131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.110/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }
