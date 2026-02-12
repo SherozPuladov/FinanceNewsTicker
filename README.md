@@ -1,4 +1,3 @@
-# FinanceNewsTicker
 # Finance News Ticker
 **FinanceNewsTicker** is a web application built with ASP.NET Core (.NET 6) using **Razor Pages** to display financial news.
 
